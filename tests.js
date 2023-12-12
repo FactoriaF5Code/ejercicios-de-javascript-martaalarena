@@ -87,13 +87,16 @@ describe('Comparaciones en Javascript', () => {
     it("usando ===", () => {
         const number = 20;
         //completa la asignación usando number y el comparador ===
-    
+        const number2 = 19;
+        let expresion = 20 === 19;
         expect(expresion).to.equal(false)
     })
 
     it("usando !==", () => {
         const language = "Javascript";
         //completa la asignación usando language y el comparador !==
+
+    
 
         expect(expresion).to.equal(false)
     })
@@ -188,9 +191,13 @@ describe('Algebra booleana', () => {
 describe("Funciones (I)", () => {
 
     function evenOrOdd(n) {
-        // cambia el contenido de la función para hacer
-        // pasar los tests
-        return "";
+       if (n%2===0){
+        return "even";
+       }
+
+        else{
+            return "odd"
+        }
     }
 
     function greeting(name) {
